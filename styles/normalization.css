@@ -1,0 +1,64 @@
+/* ----------------- */
+/* Variable Declares */
+/* ----------------- */
+:root {
+    --font-family: "Roboto", sans-serif;
+
+    --primary-color: #631094;
+    --secondary-color: #0092d1;
+
+    --misc-color1: white;
+    --misc-color2: black;
+}
+
+/* ------------------- */
+/* Apply To Everything */
+/* ------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ------------------ */
+/* Apply To Exclusive */
+/* ------------------ */
+body {
+    font-family: var(--font-family);
+}
+
+/* ------------------ */
+header {
+    padding: 0.5rem;
+
+    color: var(--misc-color1);
+    background-color: var(--primary-color);
+
+    div {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+
+        font-size: 2rem;
+    }
+}
+
+/* ------------------ */
+main {
+    padding: 0.5rem;
+
+    color: var(--misc-color2);
+    background-color: var(--secondary-color);
+    border-top: 4px solid var(--misc-color2);
+    border-bottom: 4px solid var(--misc-color2);
+}
+
+/* ------------------ */
+footer {
+    padding: 0.5rem;
+
+    color: var(--misc-color1);
+    background-color: var(--primary-color);
+
+    text-align: center;
+}
