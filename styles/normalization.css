@@ -6,6 +6,10 @@
 
     --primary-color: #631094;
     --secondary-color: #0092d1;
+    --tertiary-color: #11bfbb;
+    --quadiary-color: #4d5264;
+
+    --hover-color1: #de82fd;
 
     --misc-color1: white;
     --misc-color2: black;
@@ -51,6 +55,38 @@ main {
     background-color: var(--secondary-color);
     border-top: 4px solid var(--misc-color2);
     border-bottom: 4px solid var(--misc-color2);
+
+    #view-switch-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+
+        margin: 0.5rem 0;
+
+        button {
+            padding: 0.5rem;
+
+            color: var(--misc-color2);
+            background-color: var(--misc-color1);
+            border: 2px solid var(--misc-color2);
+
+            transition: background-color 0.2s ease;
+
+            &:hover {
+                cursor: pointer;
+
+                background-color: var(--hover-color1);
+            }
+        }
+    }
+
+    #game-cards {
+        padding: 1rem;
+
+        color: var(--misc-color2);
+        background-color: var(--tertiary-color);
+        border: 2px solid var(--misc-color2);
+    }
 }
 
 /* ------------------ */
