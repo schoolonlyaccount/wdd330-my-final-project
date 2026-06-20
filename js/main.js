@@ -1,3 +1,5 @@
-import { DisplayDataTest } from "./viewInfo.mjs";
+import { InitViewInfo, GetLastViewedGame, SetWelcomeMessage } from "./view_Info.mjs";
 
-DisplayDataTest();
+SetWelcomeMessage();
+GetLastViewedGame();
+InitViewInfo();

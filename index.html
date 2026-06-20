@@ -19,7 +19,8 @@
     <link rel="icon" href="favicon.ico">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="styles/normalization.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/small.css">
 
     <!-- JavaScript -->
     <script src="js/main.js" type="module"></script>
@@ -37,16 +38,31 @@
     <main>
         <h1>Home</h1>
 
+        <!-- A Welcome Message that is different depending on how long the user has visited -->
+        <p id="welcome-message"></p>
+
         <!-- View Switching Buttons & The Games -->
-        <div>
+        <div id="view-container">
+            <!-- View Switch-->
             <section id="view-switch-buttons">
-                <button id="top-spots">#1 Spot For Each Category</button>
-                <button id="best-sellers">Top 10 Best Sellers</button>
-                <button id="most-wishlisted">Top 10 Most Wishlisted</button>
-                <button id="most-currently-played">Top 10 Most Currently Played</button>
+                <button id="top-spots-button">View Top Spot For Each Category</button>
+                <button id="top-sellers-button">View Top Sellers</button>
+                <button id="top-wishlist-button">View Top Wishlisted</button>
             </section>
 
-            <section id="game-cards"></section>
+            <!-- Shows The Last Game The User Viewed -->
+            <p id="last-viewed-game"></p>
+
+            <!-- Views -->
+            <section id="top-spots-view" class="view"></section>
+            <section id="top-sellers-view" class="view"></section>
+            <section id="top-wishlist-view" class="view"></section>
+
+            <!-- A Game's Details-->
+            <dialog id="game-details">
+                <div class="game-details-container"></div>
+                <button class="close-dialog">Close</button>
+            </dialog>
         </div>
     </main>
 
